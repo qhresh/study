@@ -1,0 +1,16 @@
+<?php
+function inverse($x)
+{
+	if($x == 0)
+	{
+		throw new Exception('Division by zero.');
+	}
+	else
+	{
+		return 1 / $x;
+	}
+}
+
+echo inverse(5) . "\n";
+echo inverse(0) . "\n";
+echo inverse(3) . "\n";
