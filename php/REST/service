@@ -1,0 +1,4 @@
+<?php
+$xml = "<weather>\n<city>广州</city>\n<low>29</low>\n<high>36</high></weather>\n";
+$xml = simplexml_load_string($xml);
+echo $xml->asXML();
