@@ -1,0 +1,42 @@
+<?php
+$urls = array(													// 待检测的url列表
+	"http://zirzow.dyndns.org/php-general/NEWBIE/",
+	"http://video.google.com/videoplay?docid=-5137581991288263801&q=loose+change",
+	"http://nfl.dmcinsights.com/MadminY/",
+	"http://seagull.phpkitchen.com/",
+	"http://www.baidu.com",
+	"http://www.sina.com.cn"
+);
+
+foreach($urls as $url)
+{
+	$code = CheckUrl($url);
+	printf("访问url：（%s）返回的代码是：（%s）\r\n\r\n", $url, $code);
+}
+
+function CheckUrl($url)
+{
+	$urlPieces = parse_url($url);
+	
+	$path = (isset($urlPieces["path"])) ? $urlPieces["path"] : "/";
+	$port = (isset($urlPieces["port"])) ? $urlPieces["port"] : "80";
+	
+	if($fp = @fsockopen($urlPieces["host"], $port, $errno, $errstr, 30))
+	{
+		$send = "HEAD $path HTTP/1.1\r\n";
+		$send .= "HOST: {$urlPieces["host"]}\r\n";
+		$send .= "CONNECTION: Close\r\n\r\n";
+		
+		fwrite($fp, $send);
+		
+		$data = fgets($fp, 128);
+		fclose($fp);
+		
+		list($response, $code) = explode(" ", $data);
+		return $code;
+	}
+	else
+	{
+		return $errstr;
+	}
+}
