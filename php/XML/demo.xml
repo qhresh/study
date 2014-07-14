@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<operation_request>
+	<msgheader version="1.0">
+		<req_token>6DDgRoef3ELzRcyU44RUNTZz37lb8I6Od6IJLS3RPWiIoDNqcuXqP4Gl1htxx UvpiG1/nNAUmt2Z5tkDTTH+Fmw==</req_token>
+		<req_time>20140425095847</req_time>
+		<au_token>nCdBB8eUpKTJkwbr979902MH</au_token>
+		<req_version>1.0.2</req_version>
+		<req_appenv>1</req_appenv>
+		<req_bkenv>00</req_bkenv>
+		<channelinfo>
+			<authorid>334</authorid>
+			<api_name>ApiMoblieRechangeInfo</api_name>
+			<api_name_func>RechaMoneyRq</api_name_func>
+		</channelinfo>
+	</msgheader>
+	<msgbody>
+		<paycardid>FFF16301023556000000</paycardid>
+		<rechapaytypeid>1</rechapaytypeid>
+		<rechamoney>50.0</rechamoney>
+		<rechapaymoney>52.0</rechapaymoney>
+		<rechamobile>18779773086</rechamobile>
+		<rechamobileprov>江西 移动</rechamobileprov>
+		<rechabkcardno>6210984280000489572</rechabkcardno>
+		<rechabkcardid></rechabkcardid>
+		<merReserved>e0Zpcm13YXJlIFZlcnNpb246OC4xMnxFbmNyeXB0aW9uIE1vZGU6Zml4ZWQg a2V5fFRyYWNrIEluZm86MjN8ZW5jcnlwdGlvbk1vZGU6Zml4ZWQga2V5fHh4 eDp4eHh4eHh4eHh8bGFzdDRQYW46OTU3MnxFeHBpcnkgRGF0ZTo0OTEyfFVz ZXIgTmFtZTogICAgICAgICAgICAgICAgICAgICAgICAgIHxLU046RkZGMTYz MDEwMjM1NTYwMDAwMDB8RW5jcnlwdGVkIERhdGE6YTFjNTI2Y2Y2M2ViMWU4 ZDJkMDUwZjY2ZGViN2FhNmIKNTU0MmRiN2E3NDM1OWUxMzgzYzgwYTE3Njcy OWY2OTUKNGM0YzI4NmZkMGRlM2NjYzJhN2U0YTMzMTA4ZDY4MjIKZDhjZTI5 NDBjMDA4NWVlYzUyOTFkZWUzZWMzZDIwMmIKODViNjUwNzhiZDdiNDFjNDQy NGUxNTEwYzhiZWZkMzl8UEFOOjYyMTA5ODQyODAwMDA0ODk1NzJ8ZGVjcnlw ZWREYXRhYjYyMTA5ODQyODAwMDA0ODk1NzJkNDkxMjEyMDI1NDAKNjAwMDAw ZmZiOTk2MjEwOTg0MjgwMDAwNDg5NTcyZDEKNTYxNTYwMDAwMDAwMDAwMDAw MDAzMDAwMDAwMTE0MTQKMTQ0OTEyMWQwMDAwMDAwMDAwMDBkMDAwMDAwMDAw MDAKMGQwMDAwMDAwMjU0MDYwMDBmZmZmZmZmZmZmZmZmZmZ9</merReserved>
+	</msgbody>
+</operation_request>
