@@ -1,0 +1,11 @@
+<?php
+echo memory_get_usage() . "\n";				// 626368
+
+$a = str_repeat("Hello", 10000);
+
+echo strlen(serialize($a)) . "\n";			// 50011
+echo memory_get_usage() . "\n";				// 676696
+
+unset($a);
+
+echo memory_get_usage() . "\n";				// 626432
