@@ -1,0 +1,7 @@
+<?php
+$url = "wwww.baidu.com";
+$ip = gethostbyname($url);
+printf("百度的ip地址是：%s<br>", $ip);
+
+$ip = $_SERVER['REMOTE_ADDR'];									// 浏览器打开才有效
+printf("客户端浏览器的ip地址是：%s<br>", $ip);
