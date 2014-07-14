@@ -11,6 +11,8 @@ function inverse($x)
 	}
 }
 
+echo "start!\n";
 echo inverse(5) . "\n";
 echo inverse(0) . "\n";
 echo inverse(3) . "\n";
+echo "end!\n";
