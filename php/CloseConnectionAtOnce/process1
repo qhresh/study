@@ -1,5 +1,5 @@
 <?php
-function DoFactFunction1($data)
+function Process($data)
 {
 	$start=time();
 	for($i = 0; $i < 5000; $i++)
