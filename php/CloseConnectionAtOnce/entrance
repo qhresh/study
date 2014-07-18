@@ -7,11 +7,11 @@ switch($_POST['FUNC'])
 {
 	case 'KEY1':
 		require_once "process1.php";
-		process($_POST);
+		Process($_POST);
 		break;
 	case 'KEY2':
 		require_once "process2.php";
-		process($_POST);
+		Process($_POST);
 		break;
 }
 
