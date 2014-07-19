@@ -1,0 +1,4 @@
+<?php
+$value = 'this is a demo';
+echo 'value : $value' . PHP_EOL;
+echo "value : $value" . PHP_EOL;
