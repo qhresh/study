@@ -1,0 +1,5 @@
+<?php
+require_once ("Crypt/RSA.php");
+$rsa = new Crypt_RSA();
+$keyList = $rsa->createKey();
+print_r($keyList);
