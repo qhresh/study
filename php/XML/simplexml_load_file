@@ -1,7 +1,0 @@
-<?php
-$xml = simplexml_load_file("demo.xml");
-
-echo $xml->msgbody->rechamobileprov . PHP_EOL;
-echo $xml->operation_request->msgbody->rechabkcardno . PHP_EOL;			// 会报错
-echo $xml->node->rechamobileprov . PHP_EOL;								// 一个不存在的节点，但是不会产生错误
-echo $xml->msgbody->rechabkcardno . PHP_EOL;
