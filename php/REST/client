@@ -1,3 +1,0 @@
-<?php
-$xml = simplexml_load_file("http://127.0.0.1/demo/service.php");
-echo "the high temperature today will be " . $xml->high . "°C in " . $xml->city . "\n";
