@@ -1,8 +1,0 @@
-<?php
-$var = "dx";
-echo strlen(serialize($var));		// 9
-echo PHP_EOL;
-
-$arr = array("dx", "ls");
-echo strlen(serialize($arr));		// 32
-echo PHP_EOL;
