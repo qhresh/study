@@ -1,8 +1,0 @@
-<?php
-$xml = simplexml_load_file("http://api2.ofpay.com/querylist.do?userid=A942987&userpws=c7e8747acb478078e1b85db359df8f96&cardid=22&version=6.0");
-$result = array();
-foreach ($xml->ret_cardinfos->children() as $game)
-{
-	$result[] = (string)($game->cardname);
-}
-print_r($result);
